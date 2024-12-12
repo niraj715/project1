@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.con {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0px 15px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+header {
+    padding: 22px 0px;
+
+    .con {
+        @include flex(space-between, center);
+
+        h1 {
+            span {
+                color: $brand;
+            }
+        }
+
+        nav {
+            button {
+                display: none;
+
+                @include res {
+                    display: block;
+                }
+            }
+
+            ul {
+                list-style: none;
+                @include flex;
+
+                @include res {
+                    display: none;
+                }
+            }
+        }
+
+        a {
+            color: $brand;
+        }
+
+    }
+
+}
+
+.about {
+    .con {
+
+        @include flex(space-between, center);
+
+        @include res {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 54px;
+            font-weight: bold;
+        }
+        p{
+            margin: 10px;
+        }
+
+    }
+
+}
+
+button {
+    color: #fff;
+    background: $brand;
+    padding: 10px;
+
+}
+
+.counter {
+    background: $brand;
+    padding: 40px;
+    margin: 50px 0px;
+    color: #fff;
+
+    .con {
+        @include flex;
+
+        h3 {
+            font-size: 24px;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        p {
+            font-size: 11px;
+            font-weight: 400;
+            font-style: normal;
+            
+        }
+    }
+}
+
+.pride {
+    .con {
+        @include flex(space-between, center, 30px);
+
+        @include res {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: bold;
+        }
+        p{
+            margin: 10px;
+        }
+
+    }
+}
+
+.hand {
+    margin: 50px;
+    .con {
+       
+
+        @include flex(space-between, center);
+
+        @include res {
+            flex-direction: column-reverse;
+        }
+
+        h1 {
+            font-size: 44px;
+            font-weight: bold;
+        }
+        p{
+            margin: 10px;
+        }
+       span{
+        color: $brand;
+       }
+
+
+    }
+    .leaf{
+        width: 325.5px;
+        height:303.08px ;
+        position: absolute;
+        right: 70px;
+        top: 950px;
+        @include res{
+            display: none;
+        }
+    }
+
+}
+.stomach{
+    background: grey;
+    width:1440px ;
+    height: 402px ;
+    text-align: center;
+    padding-top: 150px;
+    h1{
+        color: $brand;
+        font-size: 34px;
+    }
+    p{
+        margin: 10px;
+    }
+   
+}
+.explore{
+   text-align: center;
+   padding-top: 20px;
+   padding-bottom: 80px;
+   h1{
+    margin: 20px;
+    font-size: 34px;
+   }
+   .con{
+    @include flex(space-between, center);
+    padding-top: 60px;
+    .plate{
+        border-bottom: 1px solid rgb(175, 169, 169);
+        position: relative;
+        
+        h5,h2{
+            margin: 10px;
+        }
+       button{
+        position: absolute;
+        left: 0px;
+        
+       }
+    }
+
+   }
+}
+.testmonial{
+    padding-top: 100px;
+    height: 700px;
+    text-align: center;
+    background: $brand;
+    position: relative;
+    h1{
+        font-size: 44px;
+    }
+    .feedback{
+        width: 1140px;
+        height: 325px;
+        background: #fff;
+        position: absolute;
+        left: 150px;
+        top: 200px;
+        border-radius: 20px;
+        .niraj{
+            position: absolute;
+            top: 30px;
+            left: 360px;
+
+        }
+
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            margin: 10px;
+            
+        }
+        h5{
+            margin: 10px;
+            color: $brand;
+        }
+       
+    }
+}
